@@ -1,0 +1,19 @@
+@mixin margin1($size) {
+    margin: $size;
+}
+@mixin margin2($size1, $size2) {
+    margin: $size1 $size2;
+}
+@mixin margin4($size1, $size2, $size3, $size4) {
+    margin: $size1 $size2 $size3 $size4;
+}
+
+@mixin padding1($size) {
+    padding: $size;
+}
+@mixin padding2($size1, $size2) {
+    padding: $size1 $size2;
+}
+@mixin padding4($size1, $size2, $size3, $size4) {
+    padding: $size1 $size2 $size3 $size4;
+}
