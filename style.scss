@@ -75,6 +75,7 @@ body{
 
 .logo{
     flex: 0 0 45%;
+    @include padding4(7px, 0, 0, 0);
 }
 
 nav{
@@ -82,6 +83,7 @@ nav{
 
     div{    
         float: right;
+        @include padding2(10px, 0);
 
         a{
             text-decoration: none;
@@ -172,4 +174,72 @@ nav{
         color: $white;
         background-color: $greenbg;  
     }
+}
+.scholarship{
+    position: absolute;
+    margin-top: -80px;
+}
+.sch{  
+    margin: auto;
+    width: 80%;
+    @include margin1(auto);
+    display: flex;
+    flex-direction: row;
+
+    div{
+        flex: 25%;
+        padding: 25px 30px;
+        color: white;
+
+        h3{
+            margin: 6px 0;
+        }
+        p{
+            line-height: 20px;
+        }
+    }
+}
+.s1{
+    background-color: #48a7d4;
+}
+.s2{
+    background-color: #fdc735
+}
+.s3{
+    background-color: #307ad5
+}
+.s4{
+    background-color: #10c45c
+}
+
+.about{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    padding: 180px 0;
+}
+.about1{
+    flex: 45%;
+    margin: 20px 0 0 50px;
+    padding: 25px;
+
+    h1{
+        font-size: 48px;
+        font-weight: bold;
+        margin: 0 0 20px;
+        line-height: 38px;
+
+        span{
+            color: #00a651;
+        }
+    }
+    :nth-child(2) {
+        color: #00a651;
+        margin: 0 0 20px;
+    }
+
+}
+.about2{
+    flex: 55%;
 }

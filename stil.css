@@ -66,6 +66,7 @@ body {
 
 .logo {
   flex: 0 0 45%;
+  padding: 7px 0 0 0;
 }
 
 nav {
@@ -73,6 +74,7 @@ nav {
 }
 nav div {
   float: right;
+  padding: 10px 0;
 }
 nav div a {
   text-decoration: none;
@@ -112,7 +114,7 @@ nav div a {
   font-size: 55px;
   margin-left: -100px;
   opacity: 0;
-  transition: margin-left 1.2s, opacity 1.2s;
+  transition: margin-left 1s, opacity 1s;
 }
 .left p {
   width: 70%;
@@ -124,7 +126,7 @@ nav div a {
 .left div {
   margin-left: -100px;
   opacity: 0;
-  transition: margin-left 2.4s, opacity 2.4s;
+  transition: margin-left 2.5s, opacity 2.5s;
 }
 
 .right {
@@ -163,6 +165,77 @@ nav div a {
 .btnContact:hover {
   color: white;
   background-color: #00a550;
+}
+
+.scholarship {
+  position: absolute;
+  margin-top: -80px;
+}
+
+.sch {
+  margin: auto;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+}
+.sch div {
+  flex: 25%;
+  padding: 25px 30px;
+  color: white;
+}
+.sch div h3 {
+  margin: 6px 0;
+}
+.sch div p {
+  line-height: 20px;
+}
+
+.s1 {
+  background-color: #48a7d4;
+}
+
+.s2 {
+  background-color: #fdc735;
+}
+
+.s3 {
+  background-color: #307ad5;
+}
+
+.s4 {
+  background-color: #10c45c;
+}
+
+.about {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  padding: 180px 0;
+}
+
+.about1 {
+  flex: 45%;
+  margin: 20px 0 0 50px;
+  padding: 25px;
+}
+.about1 h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin: 0 0 20px;
+  line-height: 38px;
+}
+.about1 h1 span {
+  color: #00a651;
+}
+.about1 :nth-child(2) {
+  color: #00a651;
+  margin: 0 0 20px;
+}
+
+.about2 {
+  flex: 55%;
 }
 
 /*# sourceMappingURL=stil.css.map */
