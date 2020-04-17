@@ -263,7 +263,7 @@ nav{
     display: flex;
     flex-direction: column;
     @include margin1(auto);
-    padding: 20px 0;
+    padding: 20px 0 40px 0;
     
     div {
         width: 90%;
@@ -280,12 +280,63 @@ nav{
     .courses2{
         display: flex;
         flex-direction: row;        
-        @include padding2(20px, 40px);
+        @include padding4(20px, 40px, 30px, 40px);
         margin: auto;
 
-        div{
+        
+
+        .course{
             flex: 20%;
             padding: 0;
+            overflow: hidden; 
+
+            img{
+                cursor: pointer;
+            }
+
+            .courseContent{  
+                width: 100%;  
+                box-shadow: 1px 8px 11px 1px rgba(222,222,222,1);
+                
+                h3{
+                    padding: 10px 30px;
+                    background-color: white;
+                }
+
+                p{
+                    width: 100%;
+                    padding: 10px 30px;
+                    background-color: white;
+                }
+            }
         }
     }
+}
+.courseInfo{
+    width: 100%;
+    margin: 0;
+    background-color: white;
+    opacity: 0;
+    transition: opacity 1s;
+
+    div{
+        display: flex;
+        justify-content: center;
+    }
+
+    button{
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+        padding: 12px 30px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        background-color: $greenbg;
+        color: white;
+
+        &:hover {
+            background-color: black;
+            color: white;
+        }
+    }   
 }

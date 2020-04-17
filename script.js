@@ -16,3 +16,19 @@ window.onload = () => {
     left3.style.opacity = 1;
     left3.style.marginLeft = 0;
 }
+
+let course = document.querySelectorAll(".course");
+let courseInfo = document.querySelectorAll(".courseInfo");
+
+for(let i=0; i<course.length; i++){
+    course[i].addEventListener('mouseover', () => {     
+        courseInfo[i].style.opacity = 1;
+        courseInfo[i].style.backgroundColor = 'white';
+        courseInfo[i].style.width = '100%';
+    });
+
+    course[i].addEventListener('mouseout', () => {
+        courseInfo[i].style.opacity = 0;
+    });
+}
+
