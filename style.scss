@@ -221,8 +221,9 @@ nav{
 }
 .about1{
     flex: 45%;
-    @include margin4(20px, 0, 0, 50px);
-    @include padding1(25px);
+    @include margin4(20px, 0, 0, 40px);
+    //@include padding1(25px);
+    padding-right: 20px;
 
     :nth-child(2) {
         color: #00a651;
@@ -248,9 +249,43 @@ nav{
 
     span{
         color: #00a651;
+        font-weight: normal;
     }
 }
 
 .about2{
     flex: 55%;
+    padding-left: 30px;
+}
+
+.courses{
+    background-image: url('img/bg-1.jpg');    
+    display: flex;
+    flex-direction: column;
+    @include margin1(auto);
+    padding: 20px 0;
+    
+    div {
+        width: 90%;
+        @include margin1(auto);
+
+        p {
+            width: 50%;
+        }
+    }
+    .courses1{        
+        @include padding4(100px, 40px, 30px, 40px);
+    }
+
+    .courses2{
+        display: flex;
+        flex-direction: row;        
+        @include padding2(20px, 40px);
+        margin: auto;
+
+        div{
+            flex: 20%;
+            padding: 0;
+        }
+    }
 }
