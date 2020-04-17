@@ -78,12 +78,13 @@ nav div {
 }
 nav div a {
   text-decoration: none;
-  color: black;
+  color: #160a0a;
   padding: 0 10px;
 }
 
 .home {
   position: relative;
+  max-height: auto;
   height: 600px;
 }
 
@@ -104,7 +105,7 @@ nav div a {
   width: 50%;
   flex: 0 0 60%;
   color: white;
-  margin: 100px 50px;
+  margin: 100px 100px;
 }
 .left > * {
   padding: 20px 0;
@@ -141,7 +142,7 @@ nav div a {
 
 .btnAbout, .btnContact {
   margin: 0 20px 0 0;
-  padding: 18px 25px;
+  padding: 22px 33px;
   border-radius: 30px;
   border: none;
   outline: none;
@@ -173,7 +174,6 @@ nav div a {
 }
 
 .sch {
-  margin: auto;
   width: 80%;
   margin: auto;
   display: flex;
@@ -212,7 +212,7 @@ nav div a {
   display: flex;
   flex-direction: row;
   margin: auto;
-  padding: 180px 0;
+  padding: 170px 0;
 }
 
 .about1 {
@@ -220,18 +220,26 @@ nav div a {
   margin: 20px 0 0 50px;
   padding: 25px;
 }
-.about1 h1 {
-  font-size: 48px;
-  font-weight: bold;
-  margin: 0 0 20px;
-  line-height: 38px;
-}
-.about1 h1 span {
-  color: #00a651;
-}
 .about1 :nth-child(2) {
   color: #00a651;
-  margin: 0 0 20px;
+  margin: 0 0 20px 0;
+}
+.about1 :nth-child(4) {
+  margin: 20px 0 0 0;
+}
+.about1 :nth-child(4):hover {
+  background-color: black;
+  color: white;
+}
+
+.h1title {
+  font-size: 48px;
+  font-weight: bold;
+  margin: 0 0 20px 0;
+  line-height: 38px;
+}
+.h1title span {
+  color: #00a651;
 }
 
 .about2 {
