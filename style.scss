@@ -340,3 +340,55 @@ nav{
         }
     }   
 }
+
+.achievement {
+    width: 90%;
+    margin: auto;
+    padding: 70px 40px;
+
+    .achievement1{
+        p{
+            width: 45%;
+        }
+    }
+
+    .achievement2{
+        display: flex;
+        flex-direction: row;
+        padding: 70px 0; 
+
+        .achievementCount{
+            flex: 25%;
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            padding: 0 70px;
+            border-left: 2px solid #e1dddd;
+
+            &:first-child {
+                padding: 0 70px 0 0;
+                border-left: none;
+            }
+
+            .img{
+            }
+
+            div{
+                text-align: center;
+                padding: 0 20px 0 0;
+
+                h1{
+                    font-size: 40px;
+                    font-weight: bold;
+                    color: $greenbg;
+                }
+
+                p{
+                    padding-top: 10px;
+                }
+            }
+        }
+
+
+    }
+}
