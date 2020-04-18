@@ -356,5 +356,25 @@ nav div a {
 .achievement .achievement2 .achievementCount div p {
   padding-top: 10px;
 }
+.achievement .achievement3 {
+  display: flex;
+  flex-direction: row;
+  background-size: cover;
+  background-image: url("img/bg-3.jpg");
+}
+.achievement .achievement3 .galleryImg, .achievement .achievement3 .galleryContent {
+  flex: 50%;
+}
+.achievement .achievement3 .galleryContent {
+  font-size: 16px;
+  line-height: 26px;
+  background-color: #00a550;
+  padding: 80px 30px;
+  color: white;
+}
+.achievement .achievement3 .galleryContent p {
+  opacity: 1;
+  padding: 0 0 30px 0;
+}
 
 /*# sourceMappingURL=stil.css.map */
