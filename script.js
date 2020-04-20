@@ -32,3 +32,44 @@ for(let i=0; i<course.length; i++){
     });
 }
 
+
+let s1 = document.getElementById("s1");
+let s2 = document.getElementById("s2");
+let s3 = document.getElementById("s3");
+let s4 = document.getElementById("s4");
+
+const achievementCounter = (id, start, end, duration) => {
+    let cur = start;
+    let range = end - start;
+    let increment = end > start ? 1 : -1;
+    let stepTime = Math.abs(Math.floor(duration / range));
+    let obj = document.getElementById(id);
+    let timer = setInterval(() => {
+        cur += increment;
+        obj.innerHTML = cur;
+        if(cur == end){
+            clearInterval(timer);
+        }
+    }, stepTime);
+
+}
+
+let achievement = document.querySelector(".achievement2");
+let counter = 0;
+
+window.addEventListener('scroll', () => {
+    let elementPosition = achievement.offsetTop + 65;
+    let fromTop = window.pageYOffset + window.innerHeight;
+
+    if(counter == 0){
+        if(fromTop > elementPosition) {
+            achievementCounter('s1', 0, 890, 200);
+            achievementCounter('s2', 0, 670, 500);
+            achievementCounter('s3', 0, 160, 1000);
+            achievementCounter('s4', 0, 200, 900);
+            counter++;
+        }
+    }
+
+
+})
