@@ -176,7 +176,7 @@ nav{
         background-color: $greenbg;  
     }
 }
-.scholarship{
+#scholarship{
     position: absolute;
     margin-top: -80px;
 }
@@ -212,7 +212,7 @@ nav{
     background-color: #10c45c
 }
 
-.about{
+#about{
     width: 90%;
     display: flex;
     flex-direction: row;
@@ -258,7 +258,7 @@ nav{
     padding-left: 30px;
 }
 
-.courses{
+#courses{
     background-image: url('img/bg-1.jpg');    
     display: flex;
     flex-direction: column;
@@ -341,7 +341,7 @@ nav{
     }   
 }
 
-.achievement {
+#achievement {
     width: 90%;
     margin: auto;
     padding: 70px 40px;
@@ -370,9 +370,6 @@ nav{
                 border-left: none;
             }
 
-            .img{
-            }
-
             div{
                 text-align: center;
                 padding: 0 20px 0 0;
@@ -395,26 +392,41 @@ nav{
     .achievement3{
         display: flex;
         flex-direction: row;
-        background-size: cover;
-        background-image: url('img/bg-3.jpg');
+        max-height: 450px;
+        margin-bottom: 100px;
         
 
         .galleryImg, .galleryContent {
             flex: 50%;
+            display: none;
         }
+        .galleryImg{
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }        
 
         .galleryContent{            
             font-size: 16px;
             line-height: 26px;
             background-color: $greenbg;
-            //opacity: 0.7;
             padding: 80px 30px;
             color: white;
 
             p {
-                opacity: 1;
                 padding: 0 0 30px 0;
             }
         }
     }
+
+
+}
+.thumbnails{
+    right: 109px;
+    position: absolute;
+    margin-top: -150px;
+}
+.galleryThumb{
+    display: inline-block;
 }

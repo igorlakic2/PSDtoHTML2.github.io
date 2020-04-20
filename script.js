@@ -70,6 +70,36 @@ window.addEventListener('scroll', () => {
             counter++;
         }
     }
-
-
 })
+
+let images = document.querySelectorAll('.galleryImg');
+let content = document.querySelectorAll('.galleryContent');
+let thumb = document.querySelectorAll('.galleryThumb');
+let index = 1;
+
+const slider = (n) => {
+    if(n > images.length) { index = 1; }
+    if(n < 1) { index = images.length; }
+
+    for(let i=0; i<images.length; i++){
+        images[i].style.display = 'none';
+        content[i].style.display = 'none';
+        //thumb[i].style.opacity = 0.5;
+    }
+
+    images[index-1].style.display = 'block';
+    content[index-1].style.display = 'block';
+    //thumb[index-1].style.opacity = 1;
+}
+
+slider(index);
+
+const nextSlide = (n) => {
+    slider(index += n);
+}
+const prevSlide = (n) => {
+    slider(index += n);
+}
+const currentSlide = (n) => {
+    slider(index = n);
+}
