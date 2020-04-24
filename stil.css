@@ -278,6 +278,7 @@ nav div a {
 }
 #courses .courses2 .course img {
   cursor: pointer;
+  width: 100%;
 }
 #courses .courses2 .course .courseContent {
   width: 100%;
@@ -389,6 +390,24 @@ nav div a {
 
 .galleryThumb {
   display: inline-block;
+}
+
+#toTop {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #00a550;
+  position: absolute;
+  right: 25px;
+  bottom: 50px;
+  position: fixed;
+  color: white;
+  text-align: center;
+  padding-top: 17px;
+  cursor: pointer;
+  user-select: none;
+  opacity: 0;
+  transition: opacity 0.5s;
 }
 
 /*# sourceMappingURL=stil.css.map */

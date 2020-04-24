@@ -55,6 +55,7 @@ const achievementCounter = (id, start, end, duration) => {
 }
 
 let achievement = document.querySelector(".achievement2");
+let toTopBtn = document.querySelector("#toTop");
 let counter = 0;
 
 window.addEventListener('scroll', () => {
@@ -69,6 +70,12 @@ window.addEventListener('scroll', () => {
             achievementCounter('s4', 0, 200, 900);
             counter++;
         }
+    }
+
+    if(fromTop - window.innerHeight > 400){
+        toTopBtn.style.opacity = 1;
+    }else{
+        toTopBtn.style.opacity = 0;
     }
 })
 
@@ -103,3 +110,7 @@ const prevSlide = (n) => {
 const currentSlide = (n) => {
     slider(index = n);
 }
+
+toTopBtn.addEventListener('click', () => {
+    document.documentElement.scrollTop = 0;
+})
