@@ -403,11 +403,12 @@ nav div a {
   position: fixed;
   color: white;
   text-align: center;
-  padding-top: 17px;
+  padding-top: 8px;
   cursor: pointer;
   user-select: none;
   opacity: 0;
   transition: opacity 0.5s;
+  font-size: 26px;
 }
 
 #register {
