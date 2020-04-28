@@ -403,12 +403,26 @@ nav div a {
   position: fixed;
   color: white;
   text-align: center;
-  padding-top: 8px;
+  padding-top: 12px;
   cursor: pointer;
   user-select: none;
   opacity: 0;
-  transition: opacity 0.5s;
-  font-size: 26px;
+  transition: opacity 0.5s, padding-top 0.7s;
+  font-size: 22px;
+}
+#toTop:hover {
+  animation-name: example;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  overflow: hidden;
+}
+@keyframes example {
+  from {
+    padding-top: 40px;
+  }
+  to {
+    padding-top: 12px;
+  }
 }
 
 #register {
