@@ -533,3 +533,75 @@ nav{
         margin-left: 0;
     }
 }
+
+#teacher{
+    width: 90%;
+    margin: auto;
+
+    .teacher1{
+        padding: 100px 40px;
+    }
+
+    .teacher2{
+        padding: 0 40px 50px;
+
+        .teacherImg {
+            display: inline-block;
+            padding: 0 15px 0 0;
+            position: relative;
+
+            
+
+            .asd{
+                overflow: hidden;
+                z-index: 1;
+                
+
+                &:before{
+                    content: '';
+                    display: table;
+                    clear: both;
+                }
+
+                .onhover{
+                    width: 200px;
+                    height: 260px;
+                    background-color: $greenbg;
+                    opacity: 0.8;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    transform: scale(0);
+                    transition: all 0.4s;
+                    overflow: hidden;
+                    margin: 0 15px 0 0;
+                    padding: 32px 23px;
+                    color: white;
+
+                    *{
+                        padding: 7px;
+                        color: white;
+                        z-index: 1;
+                        opacity: 1;
+                    }
+
+                    h4{
+                        font-size: 18px;
+                    }
+                    h5{
+                        font-size: 16px;
+                    }
+                }   
+                
+                &:hover .onhover{
+                    transform: scale(1);
+                }
+            }
+         
+
+
+
+            
+        }
+    }
+}

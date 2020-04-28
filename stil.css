@@ -481,4 +481,59 @@ nav div a {
   margin-left: 0;
 }
 
+#teacher {
+  width: 90%;
+  margin: auto;
+}
+#teacher .teacher1 {
+  padding: 100px 40px;
+}
+#teacher .teacher2 {
+  padding: 0 40px 50px;
+}
+#teacher .teacher2 .teacherImg {
+  display: inline-block;
+  padding: 0 15px 0 0;
+  position: relative;
+}
+#teacher .teacher2 .teacherImg .asd {
+  overflow: hidden;
+  z-index: 1;
+}
+#teacher .teacher2 .teacherImg .asd:before {
+  content: "";
+  display: table;
+  clear: both;
+}
+#teacher .teacher2 .teacherImg .asd .onhover {
+  width: 200px;
+  height: 260px;
+  background-color: #00a550;
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scale(0);
+  transition: all 0.4s;
+  overflow: hidden;
+  margin: 0 15px 0 0;
+  padding: 32px 23px;
+  color: white;
+}
+#teacher .teacher2 .teacherImg .asd .onhover * {
+  padding: 7px;
+  color: white;
+  z-index: 1;
+  opacity: 1;
+}
+#teacher .teacher2 .teacherImg .asd .onhover h4 {
+  font-size: 18px;
+}
+#teacher .teacher2 .teacherImg .asd .onhover h5 {
+  font-size: 16px;
+}
+#teacher .teacher2 .teacherImg .asd:hover .onhover {
+  transform: scale(1);
+}
+
 /*# sourceMappingURL=stil.css.map */
