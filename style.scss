@@ -150,7 +150,7 @@ nav{
     top: 25px;
     transition: opacity 3s, right 3s;
 }
-.btnAbout, .btnContact{
+.btnAbout, .btnContact, .btnRegister{
     @include margin4(0, 20px, 0, 0);
     @include padding2(22px, 33px);
     border-radius: 30px;
@@ -449,4 +449,72 @@ nav{
     user-select: none;
     opacity: 0;
     transition: opacity 0.5s;
+}
+
+#register{
+    background-image: url('img/bg-2.jpg');
+    height: 850px;
+
+    div{        
+    }
+    
+    .register1{
+        padding: 100px 40px;
+        width: 90%;
+        margin: auto;
+        color: white;
+
+        span{
+            color: white;
+        }
+    }
+    .register2{
+        padding: 0 40px;
+        width: 90%;
+        margin: auto;
+        color: white;
+
+        h4{
+            font-size: 24px;
+            font-weight: bold;
+            margin: 0 0 15px;
+        }
+        
+        form{
+            margin-left: 0;
+
+            textarea{                
+                margin: 10px;
+                padding: 14px 30px;
+                font-size: 15px;
+                width: 955px;
+                margin-left: 0;
+            }
+
+            .btnRegister{
+                color: $greenbg;
+                background-color: white;
+                font-size: 16px;
+                margin: 10px 0;
+
+                &:hover{
+                    color: white;
+                    background-color: black;
+                }
+            }
+
+
+        }
+    }
+}
+.formRow{
+    width: 1000px;
+
+    input{
+        width: 470px;
+        margin: 10px;
+        padding: 14px 30px;
+        font-size: 15px;
+        margin-left: 0;
+    }
 }
