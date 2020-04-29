@@ -1,6 +1,7 @@
 * {
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -484,6 +485,7 @@ nav div a {
 #teacher {
   width: 90%;
   margin: auto;
+  padding: 10px 0 50px 0;
 }
 #teacher .teacher1 {
   padding: 100px 40px;
@@ -500,6 +502,20 @@ nav div a {
   overflow: hidden;
   z-index: 1;
 }
+#teacher .teacher2 .teacherImg .asd .teacherInfo {
+  position: absolute;
+  width: 125px;
+  height: 75px;
+  right: 0;
+  bottom: -2px;
+  background-color: white;
+  color: #00a550;
+  margin: 4px 15px;
+  text-align: right;
+  padding: 25px 15px;
+  transform: scale(1);
+  transition: all 0.4s;
+}
 #teacher .teacher2 .teacherImg .asd:before {
   content: "";
   display: table;
@@ -509,7 +525,6 @@ nav div a {
   width: 200px;
   height: 260px;
   background-color: #00a550;
-  opacity: 0.8;
   position: absolute;
   top: 0;
   left: 0;
@@ -534,6 +549,26 @@ nav div a {
 }
 #teacher .teacher2 .teacherImg .asd:hover .onhover {
   transform: scale(1);
+}
+#teacher .teacher2 .teacherImg .asd:hover .teacherInfo {
+  transform: scale(0);
+}
+
+footer .footer1 {
+  background-image: url("img/bg-4.jpg");
+  height: 400px;
+  width: 100%;
+  background-position: center;
+}
+footer .footer1 .f1 {
+  background-color: rgba(0, 53, 2, 0.8);
+  width: 100%;
+  height: 100%;
+}
+footer .footer2 {
+  height: 60px;
+  width: 100%;
+  background-color: #00a550;
 }
 
 /*# sourceMappingURL=stil.css.map */
