@@ -184,6 +184,7 @@ nav div a {
   flex: 25%;
   padding: 25px 30px;
   color: white;
+  display: block;
 }
 .sch div h3 {
   margin: 6px 0;
@@ -400,7 +401,7 @@ nav div a {
   background-color: #00a550;
   position: absolute;
   right: 25px;
-  bottom: 50px;
+  bottom: 65px;
   position: fixed;
   color: white;
   text-align: center;
@@ -556,19 +557,78 @@ nav div a {
 
 footer .footer1 {
   background-image: url("img/bg-4.jpg");
-  height: 400px;
-  width: 100%;
   background-position: center;
 }
 footer .footer1 .f1 {
   background-color: rgba(0, 53, 2, 0.8);
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 100px;
+}
+footer .footer1 .f1 div {
+  color: white;
+  width: 20%;
+  margin: 0 15px 0 30px;
+}
+footer .footer1 .f1 div h4 {
+  font-size: 18px;
+  padding: 0 0 20px 0;
+}
+footer .footer1 .f1 div p {
+  padding: 10px 0;
+}
+footer .footer1 .f1 div p i {
+  padding-right: 5px;
+}
+footer .footer1 .f1 div a {
+  text-decoration: none;
+  display: block;
+  color: white;
+  padding-top: 10px;
+  font-size: 14px;
+}
+footer .footer1 .f1 div a:hover {
+  color: #00a550;
+}
+footer .footer1 .f1 div .gallery {
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 160px;
+  height: 150px;
+  margin: 0;
+}
+footer .footer1 .f1 div .gallery .img {
+  margin: 0;
+  padding: 1px 3px;
+}
+footer .footer1 .f1 div .gallery .img img {
+  cursor: pointer;
+}
+footer .footer1 .f1 div input {
+  padding: 10px 15px;
+  margin: 10px 0;
+}
+footer .footer1 .f1 div button {
+  padding: 10px 20px;
+  background-color: white;
+  color: #00a550;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  margin: 7px 0;
+  cursor: pointer;
+}
+footer .footer1 .f1 div button:hover {
+  color: white;
+  background-color: #00a550;
 }
 footer .footer2 {
-  height: 60px;
-  width: 100%;
   background-color: #00a550;
+  padding: 20px 100px;
+  text-align: center;
+  color: white;
 }
 
 /*# sourceMappingURL=stil.css.map */
