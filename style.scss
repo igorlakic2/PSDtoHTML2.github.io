@@ -41,17 +41,21 @@ body{
     flex-direction: row;
 }
 .container1{
-    flex: 0 0 50%;
+    flex: 0 0 55%;
     z-index: 1;
     @include padding2(12px, 0);
+    display: flex;
+    flex-direction: row;
 
     span{
         @include margin2(0, 20px);
+        display: flex;
+        flex-direction: row;
     }
 }
 
 .container2{
-    flex: 0 0 50%;
+    flex: 0 0 45%;
     z-index: 1;
     @include padding2(12px, 5px);
 
@@ -72,27 +76,33 @@ body{
 
 .header_bottom{
     @include padding2(25px, 20px);
-}
 
-.logo{
-    flex: 0 0 45%;
-    @include padding4(7px, 0, 0, 0);
-}
+    .container{
+        justify-content: space-between;
 
-nav{
-    flex: 0 0 55%;
-
-    div{    
-        float: right;
-        @include padding2(10px, 0);
-
-        a{
-            text-decoration: none;
-            color: rgb(22, 10, 10);
-            @include padding2(0, 10px);
+        .logo{
+            @include padding4(7px, 0, 0, 0);
+        }
+        
+        nav{
+        
+            div{    
+                float: right;
+                @include padding2(10px, 0);
+        
+                a{
+                    text-decoration: none;
+                    color: rgb(22, 10, 10);
+                    @include padding2(0, 10px);
+                }
+            }
         }
     }
+
+
 }
+
+
 .home{
     position: relative;
     max-height: auto;
@@ -107,7 +117,7 @@ nav{
     flex-direction: row;
     position: absolute;
     overflow: hidden;
-    height: 100%;
+    height: auto;
 }
 .left{
     width: 50%;
@@ -150,6 +160,11 @@ nav{
     height: 100%;
     top: 25px;
     transition: opacity 3s, right 3s;
+
+    img{
+        
+        height: 100%;
+    }
 }
 .btnAbout, .btnContact, .btnRegister{
     @include margin4(0, 20px, 0, 0);
@@ -180,27 +195,29 @@ nav{
 #scholarship{
     position: absolute;
     margin-top: -80px;
-}
-.sch{  
-    width: 80%;
-    @include margin1(auto);
-    display: flex;
-    flex-direction: row;
 
-    div{
-        flex: 25%;
-        @include padding2(25px, 30px);
-        color: white;
-        display: block;
-
-        h3{
-            @include margin2(6px, 0);
-        }
-        p{
-            line-height: 20px;
+    .sch{  
+        width: 90%;
+        @include margin1(auto);
+        display: flex;
+        flex-direction: row;
+    
+        div{
+            flex: 25%;
+            @include padding2(25px, 30px);
+            color: white;
+            display: block;
+    
+            h3{
+                @include margin2(6px, 0);
+            }
+            p{
+                line-height: 20px;
+            }
         }
     }
 }
+
 .s1{
     background-color: #48a7d4;
 }
@@ -257,7 +274,8 @@ nav{
 
 .about2{
     flex: 55%;
-    padding-left: 30px;
+    padding: 0 50px 0 30px;
+
 }
 
 #courses{
@@ -360,17 +378,18 @@ nav{
         display: flex;
         flex-direction: row;
         padding: 70px 0; 
+        justify-content: space-between;
 
         .achievementCount{
-            flex: 25%;
+            //flex: 25%;
             display: flex;
             flex-direction: row;
             text-align: center;
-            padding: 0 70px;
-            border-left: 2px solid #e1dddd;
+            //padding: 0 70px;
+            //border-left: 2px solid #e1dddd;
 
             &:first-child {
-                padding: 0 70px 0 0;
+                //padding: 0 70px 0 0;
                 border-left: none;
             }
 
@@ -542,13 +561,16 @@ nav{
             display: inline-block;
             padding: 0 15px 0 0;
             position: relative;
-
-            
+            width: 19%;           
 
             .asd{
                 overflow: hidden;
                 z-index: 1;
                 
+                img{
+                    width: 100%;
+                    height: auto;
+                }
                 
                 .teacherInfo{
                     position: absolute;
@@ -696,5 +718,126 @@ footer{
         padding: 20px 100px;
         text-align: center;
         color: white;
+    }
+}
+
+@media (max-width: 1150px) {
+    
+    #teacher{
+        .teacher2{
+            .teacherImg{
+                width: 30%;
+            }
+        }
+    }
+    .about2{
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+    #register{
+        .register2 {
+            form{
+                textarea{
+                    width: 800px;
+                }
+                .formRow{
+                    width: 815px;
+                    input{
+                        width: 393px;
+                    }
+                }
+            }
+        }
+
+    } 
+    .left{
+        margin: 100px 50px;
+    }
+}
+
+@media (max-width: 950px){
+    .header_bottom{
+        @include padding2(15px, 20px);
+
+        .container{
+            display: flex;
+            flex-direction: column;
+
+            nav{
+                div{
+                    float: unset;
+                    padding: 16px 0 5px 0;
+                    a{
+                        padding: 0 15px 0 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .right{
+        top: 45px;
+
+        img{
+            width: 300px;
+            height: auto;
+        }
+    }
+
+    .left{
+        margin: 50px 20px 100px 50px;
+    }
+    #scholarship{
+        margin-top: -90px;
+        .sch{
+            flex-wrap: wrap;       
+            
+            div{
+                flex: 0 0 50%;
+            }
+        }
+    }
+    #about{
+        padding: 250px 0 100px 0;
+    }
+
+    .container{
+        .container1{
+            flex: 0 0 75%;
+        }
+        .container2{
+            flex: 0 0 25%;
+        }
+    }
+    #register{
+        .register2 {
+            form{
+                textarea{
+                    width: 600px;
+                }
+                .formRow{
+                    width: 611px;
+                    input{
+                        width: 293px;
+                    }
+                }
+            }
+        }
+
+    } 
+    footer{
+        .footer1{
+    
+            .f1{    
+                flex-wrap: wrap;
+                padding: 100px 50px 50px 60px;
+                div{
+                    width: 27%;
+                    margin: 0 15px 50px 15px;
+                }
+            }
+        }
     }
 }
