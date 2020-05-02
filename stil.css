@@ -101,6 +101,9 @@ body {
   position: absolute;
   overflow: hidden;
   height: auto;
+  background-image: url("img/slider-1.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 .left {
@@ -175,7 +178,7 @@ body {
 
 #scholarship {
   position: absolute;
-  margin-top: -80px;
+  margin-top: -150px;
 }
 #scholarship .sch {
   width: 90%;
@@ -429,7 +432,8 @@ body {
 
 #register {
   background-image: url("img/bg-2.jpg");
-  height: 850px;
+  height: auto;
+  padding: 0 0 70px 0;
 }
 #register .register1 {
   padding: 100px 40px;
@@ -528,8 +532,8 @@ body {
   clear: both;
 }
 #teacher .teacher2 .teacherImg .asd .onhover {
-  width: 200px;
-  height: 260px;
+  width: unset;
+  height: 99%;
   background-color: #00a550;
   position: absolute;
   top: 0;
@@ -640,6 +644,10 @@ footer .footer2 {
   #teacher .teacher2 .teacherImg {
     width: 30%;
   }
+  #teacher .teacher2 .teacherImg .asd .onhover {
+    width: unset;
+    height: 99%;
+  }
 
   .about2 img {
     width: 100%;
@@ -689,7 +697,7 @@ footer .footer2 {
   }
 
   #scholarship {
-    margin-top: -90px;
+    margin-top: -120px;
   }
   #scholarship .sch {
     flex-wrap: wrap;
@@ -726,6 +734,135 @@ footer .footer2 {
   footer .footer1 .f1 div {
     width: 27%;
     margin: 0 15px 50px 15px;
+  }
+}
+@media (max-width: 800px) {
+  header .header_top .container {
+    font-size: 14px;
+  }
+  header .header_top .container .container1 {
+    flex: 0 0 72%;
+  }
+  header .header_top .container .container1 span {
+    margin: 0 0px 0 20px;
+  }
+  header .header_top .container .container2 {
+    flex: 0 0 28%;
+  }
+  header .header_top .container .container2 a {
+    margin: 0 5px;
+  }
+  header .header_bottom {
+    padding: 15px 0px 15px 20px;
+  }
+  header .header_bottom .container nav div a {
+    padding: 0 10px 0 0;
+    font-size: 14px;
+  }
+
+  .home {
+    min-height: 460px;
+  }
+  .home .content .left {
+    margin: 48px 0px 79px 25px;
+  }
+  .home .content .left p {
+    font-size: 15px;
+  }
+  .home .content .left h1 {
+    font-size: 35px;
+  }
+  .home .content .left .btns button {
+    padding: 15px 19px;
+  }
+  .home .content .right img {
+    width: 250px;
+  }
+
+  #about {
+    flex-direction: column;
+    padding: 120px 0 100px 0;
+  }
+  #about .about {
+    padding: 50px 50px 0 40px;
+  }
+  #about .about2 {
+    padding: 60px 50px 0 40px;
+  }
+
+  #scholarship {
+    margin-top: -185px;
+  }
+  #scholarship .sch {
+    width: 100%;
+  }
+
+  #achievement .achievement2 {
+    flex-wrap: wrap;
+  }
+  #achievement .achievement2 .achievementCount {
+    width: 50%;
+    padding: 20px;
+  }
+  #achievement .achievement3 {
+    max-height: unset;
+    flex-direction: column;
+  }
+  #achievement .achievement3 .galleryContent {
+    padding: 40px 30px;
+  }
+  #achievement .thumbnails {
+    right: 80px;
+    margin-top: -135px;
+  }
+
+  #teacher .teacher2 .teacherImg {
+    width: 49%;
+  }
+  #teacher .teacher2 .teacherImg .asd .onhover {
+    width: 95%;
+    height: 99%;
+  }
+
+  #register .register2 form textarea {
+    width: 90%;
+  }
+  #register .register2 form .formRow {
+    width: unset;
+  }
+  #register .register2 form .formRow input {
+    width: 90%;
+  }
+
+  footer .footer1 .f1 {
+    padding: 40px 0px 20px 30px;
+  }
+  footer .footer1 .f1 div {
+    width: 28%;
+    margin: 0 20px 50px 0px;
+    font-size: 14px;
+  }
+  footer .footer1 .f1 div h4 {
+    font-size: 16px;
+    padding: 0 0 2px 0;
+  }
+  footer .footer1 .f1 div p {
+    padding: 5px 0;
+  }
+  footer .footer1 .f1 div a {
+    padding-top: 5px;
+    font-size: 13px;
+  }
+}
+@media (max-width: 610px) {
+  footer .footer1 .f1 .footerGallery {
+    display: none;
+  }
+  footer .footer1 .f1 div {
+    width: 45%;
+  }
+  footer .footer1 .f1 div:last-child {
+    padding: 0;
   }
 }
 
