@@ -309,7 +309,7 @@ body {
   opacity: 0;
   transition: opacity 1s;
 }
-.courseInfo div {
+.courseInfo .courseInfo1 {
   display: flex;
   justify-content: center;
 }
@@ -494,6 +494,9 @@ body {
 }
 #teacher .teacher1 {
   padding: 100px 40px;
+}
+#teacher .teacher1 p {
+  width: 45%;
 }
 #teacher .teacher2 {
   padding: 0 40px 50px;
@@ -855,6 +858,172 @@ footer .footer2 {
   }
 }
 @media (max-width: 610px) {
+  header .header_top .container {
+    font-size: 13px;
+  }
+  header .header_bottom .container {
+    width: 90%;
+  }
+  header .header_bottom .container nav div a {
+    font-size: 12px;
+  }
+
+  .home {
+    height: 485px;
+  }
+  .home .content {
+    min-height: 280px;
+  }
+  .home .content .left {
+    margin: 17px 0px 30px 17px;
+  }
+  .home .content .left * {
+    padding: 5px 0;
+  }
+  .home .content .left h1 {
+    font-size: 31px;
+  }
+  .home .content .left p {
+    font-size: 14px;
+  }
+  .home .content .left .btns button {
+    padding: 11px 11px;
+    font-size: 10px;
+  }
+  .home .content .right {
+    top: 30px;
+  }
+  .home .content .right img {
+    width: 160px;
+  }
+
+  #scholarship {
+    margin-top: -205px;
+  }
+  #scholarship .sch div {
+    flex: 0 0 100%;
+    padding: 10px 30px;
+  }
+  #scholarship .sch div p {
+    line-height: 16px;
+    font-size: 15px;
+  }
+
+  #about {
+    padding-bottom: 50px;
+  }
+  #about .about1 {
+    margin: 50px 0 0 40px;
+  }
+  #about .about1 button {
+    padding: 14px 21px;
+  }
+  #about .about1 p {
+    width: 90%;
+    font-size: 14px;
+  }
+
+  #achievement {
+    padding: 25px 40px;
+  }
+  #achievement .achievement1 p {
+    width: 90%;
+  }
+  #achievement .achievement2 {
+    padding: 30px 0;
+  }
+  #achievement .achievement2 .achievementCount {
+    padding: 10px;
+  }
+  #achievement .achievement2 .achievementCount .count h1 {
+    font-size: 35px;
+  }
+  #achievement .achievement2 .achievementCount .count p {
+    padding-top: 5px;
+    font-size: 15px;
+  }
+  #achievement .achievement3 .galleryContent {
+    font-size: 15px;
+    line-height: 20px;
+    padding: 15px 30px;
+  }
+  #achievement .achievement3 .galleryContent p {
+    padding: 0 0 10px 0;
+    font-size: 14px;
+  }
+  #achievement .thumbnails {
+    right: 70px;
+    margin-top: -112px;
+  }
+  #achievement .thumbnails .galleryThumb {
+    width: 100px;
+  }
+  #achievement .thumbnails .galleryThumb img {
+    width: 100%;
+    height: auto;
+  }
+
+  #courses {
+    padding: 0;
+  }
+  #courses .courses1 {
+    padding: 40px 40px 30px 40px;
+  }
+  #courses .courses1 p {
+    width: 90%;
+  }
+  #courses .courses2 {
+    padding: 20px 0px 30px 0px;
+  }
+  #courses .courses2 .course .courseContent h3 {
+    padding: 5px 20px;
+    font-size: 15px;
+  }
+  #courses .courses2 .course .courseContent p {
+    padding: 5px 20px;
+    font-size: 14px;
+  }
+  #courses .courses2 .course .courseContent .courseInfo .courseInfo1 {
+    display: block;
+  }
+  #courses .courses2 .course .courseContent .courseInfo .courseInfo1 p {
+    padding: 3px 14px;
+  }
+  #courses .courses2 .course .courseContent .courseInfo button {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  .h1title {
+    font-size: 35px;
+  }
+  .h1title ~ p {
+    font-size: 14px;
+  }
+
+  #register {
+    padding: 0 0 20px 0;
+  }
+  #register .register1 {
+    padding: 40px;
+  }
+  #register .btnRegister {
+    padding: 13px;
+  }
+
+  #teacher {
+    padding: 0;
+  }
+  #teacher .teacher1 {
+    padding: 30px 40px;
+  }
+  #teacher .teacher1 p {
+    width: 90%;
+  }
+
+  footer .footer1 .f1 {
+    padding: 30px 0px 0px 30px;
+  }
   footer .footer1 .f1 .footerGallery {
     display: none;
   }
@@ -863,6 +1032,21 @@ footer .footer2 {
   }
   footer .footer1 .f1 div:last-child {
     padding: 0;
+  }
+
+  #toTop {
+    padding-top: 7px;
+    width: 40px;
+    height: 40px;
+    right: 5px;
+  }
+  @keyframes example {
+    from {
+      padding-top: 40px;
+    }
+    to {
+      padding-top: 7px;
+    }
   }
 }
 

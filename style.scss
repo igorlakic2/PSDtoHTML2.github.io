@@ -344,7 +344,7 @@ body{
     opacity: 0;
     transition: opacity 1s;
 
-    div{
+    .courseInfo1{
         display: flex;
         justify-content: center;
     }
@@ -555,6 +555,9 @@ body{
 
     .teacher1{
         padding: 100px 40px;
+        p{
+            width: 45%;
+        }
     }
 
     .teacher2{
@@ -1015,9 +1018,193 @@ footer{
 }
 
 @media (max-width: 610px){
+    header{ 
+        .header_top{ 
+            .container {
+                font-size: 13px;
+            }
+        }
+        .header_bottom{
+            .container{
+                width: 90%;
+                nav{
+                    div{
+                        a{
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .home{
+        height: 485px;
+        .content{
+            min-height: 280px;
+            .left{
+                margin: 17px 0px 30px 17px;
+                *{
+                    padding: 5px 0;
+                }
+                h1{
+                    font-size: 31px;
+                }
+                p{
+                    font-size: 14px;
+                }
+                .btns{
+                    button{
+                        padding: 11px 11px;
+                        font-size: 10px;
+                    }
+                }
+            }
+            .right{
+                top: 30px;
+                img{
+                    width: 160px;
+                }
+            }
+        }
+    }
+    #scholarship{
+        margin-top: -205px;
+        .sch{
+            div{
+                flex: 0 0 100%;
+                padding: 10px 30px;
+                p{
+                    line-height: 16px;
+                    font-size: 15px;
+                }
+            }
+        }
+    }  
+    #about{
+        padding-bottom: 50px;
+        .about1{
+            margin: 50px 0 0 40px;
+            button{
+                padding: 14px 21px;
+            }
+            p{
+                width: 90%;
+                font-size: 14px;
+            }
+        }
+    }
+    #achievement{
+        padding: 25px 40px;
+        .achievement1{
+            p{
+                width: 90%;
+            }
+        }
+        .achievement2{
+            padding: 30px 0;
+            .achievementCount{
+                padding: 10px;
+                .count{
+                    h1{
+                        font-size: 35px
+                    }
+                    p{
+                        padding-top: 5px;
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+        .achievement3{
+            .galleryContent{
+                font-size: 15px;
+                line-height: 20px;
+                padding: 15px 30px;
+                p{
+                    padding: 0 0 10px 0;
+                    font-size: 14px;
+                }
+            }
+            
+        }
+        .thumbnails{
+            right: 70px;
+            margin-top: -112px;
+            .galleryThumb{
+                width: 100px;
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+    #courses{
+        padding: 0;
+        .courses1{
+            padding: 40px 40px 30px 40px;
+            p{
+                width: 90%;
+            }
+        }
+        .courses2{
+            padding: 20px 0px 30px 0px;
+            .course {
+                .courseContent{     
+                    h3{
+                        padding: 5px 20px;
+                        font-size: 15px;
+                    }
+                    p{
+                        padding: 5px 20px;
+                        font-size: 14px;
+                    }
+                    .courseInfo{
+                        .courseInfo1{
+                            display: block;
+                            p{
+                                padding: 3px 14px;
+                            }
+                        }
+                                                button{
+                            padding: 8px;
+                            font-size: 12px;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+
+    .h1title{
+        font-size: 35px;
+        ~ p{
+            font-size: 14px;
+        }        
+    }
+    #register{
+        padding: 0 0 20px 0;
+        .register1{
+            padding: 40px;
+        }
+        .btnRegister{
+            padding: 13px;
+        }
+    }
+    #teacher{
+        padding: 0;
+        .teacher1{            
+            padding: 30px 40px;
+            p{
+                width: 90%;
+            }
+        }
+    }
     footer{
         .footer1{ 
-            .f1{
+            .f1{    
+                padding: 30px 0px 0px 30px;
                 .footerGallery{
                     display: none;
                 }
@@ -1030,4 +1217,17 @@ footer{
             }
         }
     }
+    #toTop{
+        padding-top: 7px;
+        width: 40px;
+        height: 40px;
+        right: 5px;
+        @keyframes example {
+            from { padding-top: 40px; }
+            to { padding-top: 7px; }
+        }  
+    }
+}
+@media (max-width: 515px){
+
 }
