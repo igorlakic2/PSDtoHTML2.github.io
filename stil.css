@@ -1049,5 +1049,63 @@ footer .footer2 {
     }
   }
 }
+@media (max-width: 510px) {
+  header .header_top {
+    height: auto;
+  }
+  header .header_top:before {
+    height: 45px;
+  }
+  header .header_top .container {
+    width: 100%;
+  }
+  header .header_top .container .container1 {
+    flex-direction: column;
+    padding: 5px 0;
+  }
+  header .header_top .container .container1 span {
+    margin: 0 0px 4px 20px;
+    font-size: 12px;
+  }
+  header .header_top .container .container2 {
+    padding: 5px 0;
+  }
+  header .header_top .container .container2 a {
+    margin: 0 0 5px 0;
+    font-size: 12px;
+    display: block;
+  }
+  header .header_bottom {
+    padding: 5px 0;
+  }
+  header .header_bottom .container nav div {
+    padding: 5px 0;
+  }
+  header .header_bottom .container nav div a {
+    font-size: 11px;
+    padding: 0 3px 0 0;
+  }
+
+  .home .content {
+    min-height: 240px;
+  }
+  .home .content .left h1 {
+    font-size: 25px;
+  }
+  .home .content .left p {
+    font-size: 13px;
+  }
+  .home .content .left .btns button {
+    padding: 9px 8px;
+    font-size: 9px;
+  }
+  .home .content .right {
+    top: 15px;
+  }
+
+  #scholarship {
+    margin-top: -232px;
+  }
+}
 
 /*# sourceMappingURL=stil.css.map */

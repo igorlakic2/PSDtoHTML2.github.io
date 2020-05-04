@@ -1228,6 +1228,73 @@ footer{
         }  
     }
 }
-@media (max-width: 515px){
+@media (max-width: 510px){
+    header{
+        .header_top{
+            height: auto;
+            &:before{
+                height: 45px;
+            }
+            .container{
+                width: 100%;
+                .container1{
+                    flex-direction: column;
+                    padding: 5px 0;
+                    span{
+                        margin: 0 0px 4px 20px;
+                        font-size: 12px;
+                    }
+                }
+                .container2{
+                    padding: 5px 0;
+                    a{
+                        margin: 0 0 5px 0;
+                        font-size: 12px;
+                        display: block;
+                    }
+                }
+            }
+        }
 
+        .header_bottom {
+            padding: 5px 0;
+            .container {
+                nav {
+                    div {
+                        padding: 5px 0;
+                        a {
+                            font-size: 11px;
+                            padding: 0 3px 0 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    .home {
+        .content {
+            min-height: 240px;
+            .left {
+                h1{
+                    font-size: 25px;
+                }
+                p{
+                    font-size: 13px;
+                }
+                .btns{
+                    button{
+                        padding: 9px 8px;
+                        font-size: 9px;
+                    }
+                }
+            }
+            .right{
+                top: 15px;
+            }
+        }
+    }   
+    #scholarship{
+        margin-top: -232px;
+    } 
 }
