@@ -1246,7 +1246,7 @@ footer{
                     }
                 }
                 .container2{
-                    padding: 5px 0;
+                    padding: 5px 8px;
                     a{
                         margin: 0 0 5px 0;
                         font-size: 12px;
@@ -1297,4 +1297,110 @@ footer{
     #scholarship{
         margin-top: -232px;
     } 
+    .formRow{
+        input{
+            padding: 7px 15px;
+        }
+    }
 }
+
+@media (max-width: 425px){
+    header .header_bottom .container nav div a{ font-size: 10px; }
+    .home {
+        height: 460px;
+        .content {
+            min-height: 230px;
+            .left {
+                h1{
+                    font-size: 22px;
+                }
+                p{
+                    font-size: 11px;
+                }
+                .btns{
+                    button{
+                        padding: 7px 5px;
+                        font-size: 8px;
+                        margin: 0 5px 0 0;
+                    }
+                }
+            }
+            .right{
+                top: 33px;
+                img{
+                    width: 140px;
+                    padding-left: 15px;
+                }
+            }
+        }
+    }   
+    #scholarship{
+        .sch{
+            div{
+                padding: 5px 30px;
+                h3{
+                    margin: 5px 0;                   
+                    font-size: 15px;
+                }
+                p{                    
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    #about{
+        padding-top: 20px;
+    }
+    #courses{
+        .courses2{
+            flex-wrap: wrap;
+            .course{
+                flex: 50%;
+            }
+        }        
+    }
+    #achievement .achievement2 .achievementCount { 
+        width: 100%; 
+        justify-content: space-around;
+    }
+    #achievement {
+        .thumbnails{
+            right: 61px;
+            .galleryThumb{
+                width: 80px;
+            }
+        }
+    }
+    #teacher{ 
+        .teacher2 {
+            .teacherImg {
+                .asd {
+                    .onhover{
+                        width: 90%;
+                        padding: 0px 10px;
+                    }
+                    .teacherInfo{
+                        width: 100px;
+                        height: 50px;
+                        padding: 8px 5px;
+                        h4{
+                            font-size: 14px;
+                        }
+                        h5{
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer .footer1 .f1 div{
+        width: 50%;
+        input{
+            padding: 4px 0;
+        }
+        button{
+            padding: 5px 15px;
+        }
+    }
+}   

@@ -1068,7 +1068,7 @@ footer .footer2 {
     font-size: 12px;
   }
   header .header_top .container .container2 {
-    padding: 5px 0;
+    padding: 5px 8px;
   }
   header .header_top .container .container2 a {
     margin: 0 0 5px 0;
@@ -1105,6 +1105,100 @@ footer .footer2 {
 
   #scholarship {
     margin-top: -232px;
+  }
+
+  .formRow input {
+    padding: 7px 15px;
+  }
+}
+@media (max-width: 425px) {
+  header .header_bottom .container nav div a {
+    font-size: 10px;
+  }
+
+  .home {
+    height: 460px;
+  }
+  .home .content {
+    min-height: 230px;
+  }
+  .home .content .left h1 {
+    font-size: 22px;
+  }
+  .home .content .left p {
+    font-size: 11px;
+  }
+  .home .content .left .btns button {
+    padding: 7px 5px;
+    font-size: 8px;
+    margin: 0 5px 0 0;
+  }
+  .home .content .right {
+    top: 33px;
+  }
+  .home .content .right img {
+    width: 140px;
+    padding-left: 15px;
+  }
+
+  #scholarship .sch div {
+    padding: 5px 30px;
+  }
+  #scholarship .sch div h3 {
+    margin: 5px 0;
+    font-size: 15px;
+  }
+  #scholarship .sch div p {
+    font-size: 12px;
+  }
+
+  #about {
+    padding-top: 20px;
+  }
+
+  #courses .courses2 {
+    flex-wrap: wrap;
+  }
+  #courses .courses2 .course {
+    flex: 50%;
+  }
+
+  #achievement .achievement2 .achievementCount {
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  #achievement .thumbnails {
+    right: 61px;
+  }
+  #achievement .thumbnails .galleryThumb {
+    width: 80px;
+  }
+
+  #teacher .teacher2 .teacherImg .asd .onhover {
+    width: 90%;
+    padding: 0px 10px;
+  }
+  #teacher .teacher2 .teacherImg .asd .teacherInfo {
+    width: 100px;
+    height: 50px;
+    padding: 8px 5px;
+  }
+  #teacher .teacher2 .teacherImg .asd .teacherInfo h4 {
+    font-size: 14px;
+  }
+  #teacher .teacher2 .teacherImg .asd .teacherInfo h5 {
+    font-size: 12px;
+  }
+
+  footer .footer1 .f1 div {
+    width: 50%;
+  }
+  footer .footer1 .f1 div input {
+    padding: 4px 0;
+  }
+  footer .footer1 .f1 div button {
+    padding: 5px 15px;
   }
 }
 
